@@ -1,9 +1,9 @@
 name: Linux
 
 on:
-  pull_request:
+  push:
     branches:
-      - dev
+      - c-ares
 
 jobs:
   build:
@@ -37,4 +37,4 @@ jobs:
 
       - name: Tests
         run: |
-          xmake l ./scripts/test.lua -D -k ${{ matrix.kind }}
+          xmake l ./scripts/test.lua -D --toolchain=gcc-9 -k ${{ matrix.kind }}
