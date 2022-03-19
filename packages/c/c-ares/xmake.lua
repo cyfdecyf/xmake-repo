@@ -47,3 +47,4 @@ package("c-ares")
     on_test(function (package)
         assert(package:has_cfuncs("ares_library_init", {includes = "ares.h"}))
     end)
+

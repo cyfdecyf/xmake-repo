@@ -1,9 +1,9 @@
 name: Linux (Clang)
 
 on:
-  pull_request:
+  push:
     branches:
-      - dev
+      - c-ares
 
 jobs:
   build:
