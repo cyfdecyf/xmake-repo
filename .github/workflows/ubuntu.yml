@@ -37,4 +37,4 @@ jobs:
 
       - name: Tests
         run: |
-          xmake l ./scripts/test.lua -D --toolchain=gcc-9 -k ${{ matrix.kind }}
+          xmake l ./scripts/test.lua -D --toolchain=gcc -k ${{ matrix.kind }}
